@@ -1,0 +1,18 @@
+b="Hello Word"
+print(b.upper())
+# yukarıdaki örnekte ise string olan kelimenin tüm harfleri büyük olacaktır.
+
+a="HELLO WORD"
+print(a.lower())
+#eğer kodumunuzu lower olarak yazarsak eğer küçük olarak yazacaktır.
+
+c="    Hello Word     "
+print(c.strip())
+#bu örnekte ise string'in başlangıç ve bitişlerindeki boşlukları kaldırmamıza yardımcı olacaktır.
+
+x="Hello Word"
+print(x.replace("H","J"))
+#replace komutu ile istenilen harf veya yeri istediğimiz metini girebiliriz örnekteki gibi h harfini j harfine döndürdük
+
+v="Hello Word"
+print(v.split(","))
