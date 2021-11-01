@@ -1,0 +1,35 @@
+a="Hello"
+b="Word"
+c=a+b
+z=a+"   "+b
+print(c)
+print(z)
+
+# kod basit olarak iki tane farklı string değerini toplama gibi göstererek yapılmıştır.
+#aynı şekide yanına ufak bir boşluklu yorum satırını toplamış gibi göstererekte yazabiliriz.
+
+"""age=36
+txt="MY name is Hasan, I am"+age
+print(txt)"""
+# şu şekilde bir birleştirme yaparsak hata alırız int gibi davranmaya başlar ve string ile int toplamaz ancak;
+#kodda yorum satırı var diğer kodların çalıması için yorum satırı olarak bırakıldı.
+
+age1=23
+tct="My name is Hasan, I am {}"
+print(tct.format(age1))
+#ancak format komutunu kullanırsak değişken değiştirmeden yazabiliriz ancak bir şartla string değerimize süslü parantez eklemeliyiz.
+
+quantity=3
+itemno=567
+price=49.95
+myorder="I want to {} pieces of item {} for {} dollars."
+print(myorder.format(quantity,itemno,price))
+#bu örnekte ise 3 tane ayrı ayrı değişkenleri tek format parantezine koyarak da tanımlayabiliriz.
+
+q=3
+i=567
+p=49.95
+myorders="I want to {2} pieces of item {0} for {1} dollars."
+print(myorders.format(q,i,p))
+#süslü parantezlerin içine index numarası koyarsak eğer tanımlanan değişkenlere göre sıralabiriz
+
